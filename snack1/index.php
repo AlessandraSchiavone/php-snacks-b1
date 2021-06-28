@@ -6,56 +6,35 @@ Olimpia Milano - Cantù | 55-60
 
 $matches = [
     [
-        [
-            "squadra" => "De'Longhi Treviso",
-            "punti" => 84,
-        ],
-        [
-            "squadra_host" => "Dolomiti Energia Trentino",
-            "punti" => 80,
-        ]
+        "name" => "De'Longhi Treviso",
+        "name_host" => "Dolomiti Energia Trentino",
+        "punti" => 84,
+        "punti_host" => 80
     ],
     [
-        [
-            "squadra" => "Openjobmetis Varese",
-            "punti" => 94,
-        ],
-        [
-            "squadra_host" => "Germani Brescia",
-            "punti" => 89,
-        ]
+        "name" => "Openjobmetis Varese",
+        "name_host" => "Germani Brescia",
+        "punti" => 94,
+        "punti_host" => 89
     ],
     [
-        [
-            "squadra" => "UNAHOTELS Reggio Emilia",
-            "punti" => 71,
-        ],
-        [
-            "squadra_host" => "A|X Armani Exchange Milano",
-            "punti" => 87,
-        ]
+        "name" => "UNAHOTELS Reggio Emilia",
+        "name_host" => "A|X Armani Exchange Milano",
+        "punti" => 71,
+        "punti_host" => 87
     ],
     [
-        [
-            "squadra" => "Allianz Pallacanestro Trieste",
-            "punti" => 102,
-        ],
-        [
-            "squadra_host" => "Vanoli Basket Cremona",
-            "punti" => 77,
-        ]
+        "name" => "Allianz Pallacanestro Trieste",
+        "name_host" => "Vanoli Basket Cremona",
+        "punti" => 102,
+        "punti_host" => 77
     ],
     [
-        [
-            "squadra" => "Carpegna Prosciutto Pesaro",
-            "punti" => 85,
-        ],
-        [
-            "squadra_host" => "Banco di Sardegna Sassari",
-            "punti" => 95,
-        ]
-    ],
-
+        "name" => "Carpegna Prosciutto Pesaro",
+        "name_host" => "Banco di Sardegna Sassari",
+        "punti" => 85,
+        "punti_host" => 95
+    ]
 ];
 ?>
 
@@ -128,9 +107,9 @@ body{
         <?php 
         for($i=0; $i < count($matches); $i++ ){
             echo"<tr>";
-            echo "<td>".$matches[$i][0]["squadra"]."</td>";
-            echo "<td>".$matches[$i][1]["squadra_host"]."</td>";
-            echo "<td>".$matches[$i][0]["punti"]." - ". $matches[$i][1]["punti"]."</td>"; 
+            echo "<td>".$matches[$i]["name"]."</td>";
+            echo "<td>".$matches[$i]["name_host"]."</td>";
+            echo "<td>".$matches[$i]["punti"]." - ". $matches[$i]["punti_host"]."</td>"; 
             echo"</tr>";
          }
         ?>
